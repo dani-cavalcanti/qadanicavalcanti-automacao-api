@@ -1,0 +1,500 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "users": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "maidenName": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "birthDate": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "bloodGroup": {
+              "type": "string"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "number"
+            },
+            "eyeColor": {
+              "type": "string"
+            },
+            "hair": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "color",
+                "type"
+              ]
+            },
+            "domain": {
+              "type": "string"
+            },
+            "ip": {
+              "type": "string"
+            },
+            "address": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "coordinates": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "lat",
+                    "lng"
+                  ]
+                },
+                "postalCode": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address",
+                "city",
+                "coordinates",
+                "postalCode",
+                "state"
+              ]
+            },
+            "macAddress": {
+              "type": "string"
+            },
+            "university": {
+              "type": "string"
+            },
+            "bank": {
+              "type": "object",
+              "properties": {
+                "cardExpire": {
+                  "type": "string"
+                },
+                "cardNumber": {
+                  "type": "string"
+                },
+                "cardType": {
+                  "type": "string"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "iban": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cardExpire",
+                "cardNumber",
+                "cardType",
+                "currency",
+                "iban"
+              ]
+            },
+            "company": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "coordinates": {
+                      "type": "object",
+                      "properties": {
+                        "lat": {
+                          "type": "number"
+                        },
+                        "lng": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "lat",
+                        "lng"
+                      ]
+                    },
+                    "postalCode": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "address",
+                    "city",
+                    "coordinates",
+                    "postalCode",
+                    "state"
+                  ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address",
+                "department",
+                "name",
+                "title"
+              ]
+            },
+            "ein": {
+              "type": "string"
+            },
+            "ssn": {
+              "type": "string"
+            },
+            "userAgent": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "firstName",
+            "lastName",
+            "maidenName",
+            "age",
+            "gender",
+            "email",
+            "phone",
+            "username",
+            "password",
+            "birthDate",
+            "image",
+            "bloodGroup",
+            "height",
+            "weight",
+            "eyeColor",
+            "hair",
+            "domain",
+            "ip",
+            "address",
+            "macAddress",
+            "university",
+            "bank",
+            "company",
+            "ein",
+            "ssn",
+            "userAgent"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "maidenName": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "birthDate": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "bloodGroup": {
+              "type": "string"
+            },
+            "height": {
+              "type": "integer"
+            },
+            "weight": {
+              "type": "integer"
+            },
+            "eyeColor": {
+              "type": "string"
+            },
+            "hair": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "color",
+                "type"
+              ]
+            },
+            "domain": {
+              "type": "string"
+            },
+            "ip": {
+              "type": "string"
+            },
+            "address": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "coordinates": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "lat",
+                    "lng"
+                  ]
+                },
+                "postalCode": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address",
+                "city",
+                "coordinates",
+                "postalCode",
+                "state"
+              ]
+            },
+            "macAddress": {
+              "type": "string"
+            },
+            "university": {
+              "type": "string"
+            },
+            "bank": {
+              "type": "object",
+              "properties": {
+                "cardExpire": {
+                  "type": "string"
+                },
+                "cardNumber": {
+                  "type": "string"
+                },
+                "cardType": {
+                  "type": "string"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "iban": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cardExpire",
+                "cardNumber",
+                "cardType",
+                "currency",
+                "iban"
+              ]
+            },
+            "company": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "coordinates": {
+                      "type": "object",
+                      "properties": {
+                        "lat": {
+                          "type": "number"
+                        },
+                        "lng": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "lat",
+                        "lng"
+                      ]
+                    },
+                    "postalCode": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "address",
+                    "city",
+                    "coordinates",
+                    "postalCode",
+                    "state"
+                  ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address",
+                "department",
+                "name",
+                "title"
+              ]
+            },
+            "ein": {
+              "type": "string"
+            },
+            "ssn": {
+              "type": "string"
+            },
+            "userAgent": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "firstName",
+            "lastName",
+            "maidenName",
+            "age",
+            "gender",
+            "email",
+            "phone",
+            "username",
+            "password",
+            "birthDate",
+            "image",
+            "bloodGroup",
+            "height",
+            "weight",
+            "eyeColor",
+            "hair",
+            "domain",
+            "ip",
+            "address",
+            "macAddress",
+            "university",
+            "bank",
+            "company",
+            "ein",
+            "ssn",
+            "userAgent"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "users"
+  ]
+}

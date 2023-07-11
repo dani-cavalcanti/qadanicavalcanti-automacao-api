@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "5.0.1"
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.1'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'io.rest-assured:rest-assured:5.3.1'
+    implementation group: 'io.rest-assured', name: 'json-schema-validator', version: '3.0.0'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.1'
+}
+
