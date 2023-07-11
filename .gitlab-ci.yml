@@ -1,28 +1,30 @@
-image: maven:latest
+image: gradle:alpine
 
-stages:
- - build
- - test
- - deploy
- 
+before_script:
+  - GRADLE_USER_HOME="$(pwd)/.gradle"
+  - export GRADLE_USER_HOME
+
 build:
- stage: build
- script:
-   - mvn compile
+  stage: build
+  script: gradle --build-cache assemble
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: push
+    paths:
+      - build
+      - .gradle
 
 test:
- stage: test
- script:
-   - mvn test
+  stage: test
+  script: gradle check
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: pull
+    paths:
+      - build
+      - .gradle
 
 deploy:
- stage: deploy
- dependencies:
-   - build
-   - test
-   - package
- image: anardy/wildfly
- before_script:
-   - chmod +x ./deploy.sh
- script:
-   - ./deploy.sh
+  stage: deploy
+  script: echo "Define your deployment script!"
+  environment: main
