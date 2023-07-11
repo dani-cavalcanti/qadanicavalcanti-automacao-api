@@ -3,11 +3,8 @@ image: maven:latest
 stages:
  - build
  - test
- - package
  - deploy
- - liquibase
- - liquibase_rollback
-
+ 
 build:
  stage: build
  script:
