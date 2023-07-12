@@ -1,11 +1,11 @@
-# Desafio Técnico de QE no Sicredi
+# Automação de API usando Java e Gradle
 ## Requisitos
 * Java 8+
 * Gradle 6.3
 #
 
 ## Objetivo
-Este documento descreve os passos necessários para executar o projeto de tests que compõe o desafio técnico para QE no Sicredi, que envolve a interação com os seguintes endpoints da API ``https://dummyjson.com``:
+Este documento descreve os passos necessários para executar o projeto de tests que envolve a interação com os seguintes endpoints da API ``https://dummyjson.com``:
 
 - GET /test
 - GET /users
@@ -82,7 +82,8 @@ Para clonar o projeto, siga as instruções abaixo:
 2. Execute o seguinte comando para clonar o repositório:
 
    ```shell
-   git clone https://gitlab.com/qadani/QESicredi.git
+   git clone https://github.com/qadani/qadanicavalcanti-automacao-api
+.git
    ```
 
 3. Aguarde até que o processo de clonagem seja concluído. Agora você terá uma cópia local do projeto.
