@@ -82,11 +82,10 @@ Para clonar o projeto, siga as instruções abaixo:
 2. Execute o seguinte comando para clonar o repositório:
 
    ```shell
-   git clone https://github.com/qadani/qadanicavalcanti-automacao-api
-.git
+   https://github.com/dani-cavalcanti/qadanicavalcanti-automacao-api.git)
    ```
 
-3. Aguarde até que o processo de clonagem seja concluído. Agora você terá uma cópia local do projeto.
+4. Aguarde até que o processo de clonagem seja concluído. Agora você terá uma cópia local do projeto.
 
 ## Executando o projeto via terminal
 
